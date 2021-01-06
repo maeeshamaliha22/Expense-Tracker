@@ -29,12 +29,39 @@ body{ margin: 0; }
     margin: 4% auto;  
 }
 
-#expense-app #balance{
+#balance{
     position: relative; 
-    top: 30px;
+    top: 50px;
     left: 25px;
-    font-size: 2.5em;
+    font-size: 1.2em;
     font-family: 'Gilroy Bold';
 }
 
+ #balance-amount{
+    position: relative; 
+    top: 50px;
+    left: 25px;
+    font-size: 2em;
+    font-family: 'Gilroy Bold';
+}
+
+.income-expense{
+    display: flex;
+}   
+
+#income-amount, #expense-amount{
+    position: relative; 
+    top: 160px;
+    left: 25px;
+    font-size: 1.2em;
+    font-family: 'Gilroy-Regular';
+}
+
+.income-expense div{
+    margin: 0px 195px 0px 5px;
+}    
+
+#income-amount span, #expense-amount span{
+    display: block;
+}
 
