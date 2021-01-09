@@ -12,7 +12,7 @@
 }
 
 body, html{
-    background-color:slategray;
+    background-color: #292929;
     /* margin: 30px auto; */
     width: auto;
     height: auto;
@@ -24,30 +24,39 @@ body{ margin: 0; }
     position: relative;
     width: 400px;
     height: 800px;
-    background-color: lightcoral;
-    border-radius: 25px;
+    background-color: #414159;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     margin: 4% auto;  
 }
 
-#balance{
+#balance-header{
     position: relative; 
     top: 50px;
     left: 25px;
     font-size: 1.2em;
     font-family: 'Gilroy Bold';
+    color: #f0f2f0;
+    
 }
 
  #balance-amount{
     position: relative; 
+    margin-top: 10px;
     top: 50px;
     left: 25px;
     font-size: 2em;
     font-family: 'Gilroy Bold';
+    color:#f0f2f0;
 }
 
 .income-expense{
     display: flex;
 }   
+
+.income-expense div{
+    margin: 0px 195px 0px 5px;
+}    
 
 #income-amount, #expense-amount{
     position: relative; 
@@ -55,13 +64,49 @@ body{ margin: 0; }
     left: 25px;
     font-size: 1.2em;
     font-family: 'Gilroy-Regular';
+    color:#d5e1f5;
 }
 
-.income-expense div{
-    margin: 0px 195px 0px 5px;
-}    
+#income-amount span:last-child{
+    margin-top: 5px;
+    color: #f0f2f0;
+    font-family: 'Gilroy Bold'; 
+    text-align: center; 
+    font-size: .8em;
+}
+
+#expense-amount span:last-child{
+    margin-top: 5px;
+    color:#d97979;
+    font-family: 'Gilroy Bold';  
+    text-align: center;
+    font-size: .8em;
+}
 
 #income-amount span, #expense-amount span{
     display: block;
 }
 
+#budget-details{
+    /* width: auto; */
+    position: relative;
+    width: 400px;
+    height: 495px;
+    top: 180px;
+    background-color: #edf2f2;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#budget-details-header{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 1.2em;
+    
+}
+
+.budget-details-header-button{
+    width: 70px;
+    height: 25px;
+}
