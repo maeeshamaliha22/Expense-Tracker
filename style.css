@@ -106,7 +106,24 @@ body{ margin: 0; }
     
 }
 
+.input{
+    position: relative;
+    top: 420px;
+}
+
 .budget-details-header-button{
     width: 70px;
     height: 25px;
+}
+
+#input-title, #input-amount{
+    width: 150px;
+}
+
+#plus-sign{
+    position: absolute;
+    top: -4px;
+    left: 330px;
+    width: 31px;
+    height: 31px;
 }
